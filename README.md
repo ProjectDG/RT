@@ -1,3 +1,3 @@
 # RT
 Drink Recipes
-projectdg.github.io/RT/
+[click here for my first project](https://projectdg.github.io/RT/)
