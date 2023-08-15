@@ -578,7 +578,6 @@ $(document).ready(function(){
         $(".all-buttons").hide();        
         $(".form-container").hide();
         $(".results-list").hide();
-        $("#navDessert").hide();
         $(".happyhour-buttons").show()//.fadeIn(200);
         $(".button-container").show();
         openFullscreen();
