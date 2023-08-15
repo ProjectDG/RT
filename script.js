@@ -67,6 +67,19 @@ class Drink{
    let mulecumber = new Drink("Mulecumber", "Rocco's Logo Pint",null,null,null, ["Basil ( 2 Leaves Muddled ),", "Cucumber ( 2 Slices Muddled ),", "Dugan & Dane Classic Tonic 1 oz,", "Q Ginger Beer ( Topped ),","Sour Mix 1 oz"], ["Basil Leaf & Dehydrated Lime Wheel,", "Peeled Cucumber in Glass"],"./images/mulecumber.png", null);
    let roseberry = new Drink("Roseberry", "Rocco's Logo Pint",null,null,null, ["Agave .25 oz,", "Blueberries ( 8 Muddled ),", "Club Soda ( Topped ),","Dugan & Dane Classic Tonic 1 oz,", "Rosemary Sprig"], ["Blueberries ( 4-6 Skewered ),", "Dehydrated Lime Wheel & Rosemary Sprig"],"./images/roseberry.png", null);
 
+   // Happy Hour
+   let houseHH = new Drink("House","Rocks Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec .5 oz"], ["Sour Mix 1.5 oz"], ["Lime Wedge"],"./images/happyHour.png", null);
+   let skinnyHH = new Drink("Skinny","Rocks Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec .5 oz"], ["Club Soda ( Topped ),","Rocco's Lime Mix 1.5 oz"], ["Lime Wedge"],"./images/happyHour.png", null);
+   let jalapenoHH = new Drink("Jalapeno","Rocks Glass", "Guest Choice", ["Tanteo Jalapeno 1.5 oz", "( sub Habanero or Chipotle )"], ["Triple Sec .5 oz"], ["Sour Mix 1.5 oz"], ["Lime Wedge"],"./images/happyHour.png", null);
+   let volcanicHH = new Drink("Volcanic","Rocks Glass", "Black Sea Salt", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec .5 oz"], ["Black Cherry Puree .75 oz,","Sour Mix 1.5 oz"], ["Lime Wedge"],"./images/happyHour.png", null);
+   let watermelonHH = new Drink("Watermelon","Rocks Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec .5 oz"], ["Sour Mix 1.5 oz,", "Watermelon Puree 1 oz"], ["Lime Wedge"],"./images/happyHour.png", null);
+
+   // Sangria
+   let whiteSangria = new Drink("White Sangria", "Wine Glass",null, ["Lindeman's Chardonnay 2 oz"], ["E & J Brandy / Amaretto Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/whiteSangria.png", "Batch");
+   let redSangria = new Drink("Red Sangria", "Wine Glass",null, ["Lindeman's Merlot 2 oz"], ["E & J Brandy / Blackberry Brandy Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/redSangria.png", "Batch");
+   let roseSangria = new Drink("Rose Sangria", "Wine Glass",null, ["Hampton Water Rose 2 oz"], ["E & J Brandy / Triple Sec Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/roseSangria.png", "Batch");
+
+
    // Batch Recipes
    let roccoMangoBatch = new Drink("Rocco Mango (Batch)",null,null, ["Jose Cuervo Tradicional Silver 750ml,", "Rock & Roll Mango Tequila 750ml"], ["J. F. Hayden Mango Liqueur 750ml"],null,null,"./images/logo.png", "Batch");
    //let  = new Drink(null,null,null, null,null,null,null,"./images/logo.png", "Batch");
@@ -109,6 +122,18 @@ class Drink{
        pinita,
        mulecumber,
        roseberry,
+
+       // Happy Hour
+       houseHH,
+       skinnyHH,
+       jalapenoHH,
+       volcanicHH,
+       watermelonHH,
+
+       // Sangria
+       whiteSangria,
+       redSangria,
+       roseSangria,
 
        // Batch recipes **********************
        roccoMangoBatch,
@@ -231,7 +256,7 @@ $(document).ready(function(){
                 $(".item4").html('<div class="recipe-container"></div>');
 
                 if(x["batch"] === "Batch"){
-                    if(x["name"] === "Sangria (Batch)"){
+                    if(x["glass"] === "Wine Glass"){
                         $("#liquor").text("Wine :");
                     }
                 } 
@@ -425,7 +450,7 @@ $(document).ready(function(){
                    }
 
                    if(x["batch"] === "Batch"){
-                    if(x["name"] === "Sangria (Batch)"){
+                    if(x["glass"] === "Wine Glass"){
                         $("#liquor").text("Wine :");
                     }
                 } 
@@ -538,6 +563,27 @@ $(document).ready(function(){
         openFullscreen();
     });
 
+    $("#navHappyHour").click(function(){
+        $(".item3").hide();
+        $(".item4").hide();
+        $(".drink-title").hide();
+        $("#liquorRecipe2").hide();
+        $("#mixersRecipe2").hide();
+        $("#mixersRecipe3").hide();
+        $("#mixersRecipe4").hide();
+        $("#mixersRecipe5").hide();
+        $("#garnishRecipe2").hide();
+        $("#garnishRecipe3").hide();
+        $("#garnishRecipe4").hide();
+        $(".all-buttons").hide();        
+        $(".form-container").hide();
+        $(".results-list").hide();
+        $("#navDessert").hide();
+        $(".happyhour-buttons").show()//.fadeIn(200);
+        $(".button-container").show();
+        openFullscreen();
+    });
+
     $("#navOther, #clear").click(function(){
         $(".item3").hide();
         $(".item4").hide();
@@ -553,7 +599,6 @@ $(document).ready(function(){
         $(".all-buttons").hide();
         $(".results-list").hide();
         $(".other-buttons").show()//.fadeIn(200);
-        $("#navDessert").show()//.fadeIn(200);
         $(".form-container").show();
         $(".button-container").show();
         searchInput.value = '';
