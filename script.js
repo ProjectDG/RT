@@ -79,6 +79,13 @@ class Drink{
    let redSangria = new Drink("Red Sangria", "Wine Glass",null, ["Lindeman's Merlot 2 oz"], ["E & J Brandy / Blackberry Brandy Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/redSangria.png",null);
    let roseSangria = new Drink("Rose Sangria", "Wine Glass",null, ["Hampton Water Rose 2 oz"], ["E & J Brandy / Peach Schnapps Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/roseSangria.png",null);
 
+
+
+   // Taco Tuesday
+   let navTacoTuesday = new Drink("Taco Tuesday ($7 House / Mexican Drafts)", "Margarita Glass or Pint Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/tacoTuesday.png", null);
+
+
+
    // Brunch
    let mimosa = new Drink("Mimosa", "Champaign Flute",null,["Sparkling Wine 3 oz"],null, ["Orange Juice 2 oz"],null,"./images/brunch.png", null);
    let bloodyMary = new Drink("Bloody Mary", "Mojito Glass", "Rocco's Spice Rim",["Finlandia Vodka 2 oz"],null, ["Zing Zang 4 oz"], ["Lemon Wedge,", "Olives ( 3 Skewered )"],"./images/brunch.png", null);
@@ -140,6 +147,9 @@ class Drink{
        whiteSangria,
        redSangria,
        roseSangria,
+
+       // Taco Tuesday
+       navTacoTuesday,
 
        // Brunch
        mimosa,
@@ -640,9 +650,8 @@ $(document).ready(function(){
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
         $(".form-container").hide();
-        $(".results-list").hide();
         $(".tacotuesday-buttons").show()//.fadeIn(200);
-        $("#tacoTuesday").show();
+        $(".results-list").hide();
         $(".button-container").show();
         openFullscreen();
     });
