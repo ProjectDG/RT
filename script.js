@@ -640,9 +640,9 @@ $(document).ready(function(){
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
         $(".form-container").hide();
+        $(".results-list").hide();
         $(".tacotuesday-buttons").show()//.fadeIn(200);
         $("#tacoTuesday").show();
-        $(".results-list").hide();
         $(".button-container").show();
         openFullscreen();
     });
