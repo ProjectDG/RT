@@ -253,7 +253,7 @@ body {
         grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
         column-gap: 2vw;
         height: 100%;
-        font-size: .7em;
+        font-size: 3vh;
     }
 
     #glass{
