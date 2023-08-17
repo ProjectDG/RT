@@ -104,11 +104,12 @@ body {
         position: relative;
         border: 4px outset rgb(122, 113, 113);
         margin: 0% 2% 0% 2%;
-        width: 12vw;
+        width: 14vw;
         height: 10vh;
         font-size: 2.75vh;
         background-color: black;
         color: white;
+        padding: 0 3vw;
       }
       
       #navDessert{
@@ -168,7 +169,7 @@ body {
     .item2 {
         grid-column: 1 / span 2;
         grid-row: 2;
-        height: 65vh;
+        height: 60vh;
         width: 85vw;
         border: 4px outset rgb(122, 113, 113);
         display: grid;
@@ -414,10 +415,11 @@ body {
         background-color: rgba(0, 0, 0, 0);
     }
 
-    #navBatch{
-        height: 13vh;
-        width: 80vw;
-        font-size: 4.5vh;
+    #navBatch, #navBrunch, #navTacoTuesday{
+        margin-top: .25vh;
+        height: 10vh;
+        width: 25vw;
+        font-size: 3vh;
     }
 
 }
