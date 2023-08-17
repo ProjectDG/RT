@@ -11,7 +11,9 @@
   
 body {
     font-size: 14px;
-    background-image: url("https://anyvoo.com/wp-content/uploads/2020/04/Old-School-Wood-Plank-Video-Conference-Background-Design-Full-Image-No-Logo.jpg");
+    background: url("https://anyvoo.com/wp-content/uploads/2020/04/Old-School-Wood-Plank-Video-Conference-Background-Design-Full-Image-No-Logo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
   ::backdrop{
