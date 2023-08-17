@@ -82,7 +82,7 @@ class Drink{
 
 
    // Taco Tuesday
-   let navTacoTuesday = new Drink("$7 House / 5$ Mexican Drafts", "Margarita Glass or Pint Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/tacoTuesday.png", null);
+   let navTacoTuesday = new Drink("$7 House | $5 Mexican Drafts", "Margarita Glass or Pint Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/tacoTuesday.png", null);
 
 
 
