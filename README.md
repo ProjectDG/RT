@@ -1,2 +1,2 @@
 # Drink Recipes
-[click here for my first project](https://projectdg.github.io/RT/)
+[click here for Training App](https://projectdg.github.io/RT/)
