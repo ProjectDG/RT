@@ -41,7 +41,8 @@ body {
         justify-content: center;
         margin: 5% 5%;
         height: auto;
-        font-size: 4vh;
+        font-size: 4.2vh;
+        font-family: monospace;
         -webkit-text-stroke: 2px black;
     }
 
