@@ -27,7 +27,7 @@ class Drink{
    };
    
    // Margaritas................................................................................................
-   let houseMargarita = new Drink("House Margarita", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz", "( Flavored Margarita: Sour Mix 2 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz )"], ["Lime Wedge"],"./images/houseMargarita.png", null);
+   let houseMargarita = new Drink("House Margarita", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz", "Flavored Margarita: Sour Mix 2 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz"], ["Lime Wedge"],"./images/houseMargarita.png", null);
    let roccoRita = new Drink("Rocco Rita","Margarita Glass", "Guest Choice", ["Teremana Blanco 2 oz"], ["J. F. Haydens Orange Liqueur 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/roccoRita.png", null);
    let cadillac = new Drink("Cadillac", "Margarita Glass", "Guest Choice", ["1800 Anejo 2 oz"], ["Grand Marnier 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/cadillac.png", null);
    let blackDiamond = new Drink("Black Diamond", "Rocks Glass", "Black Sea Salt", ["Santo Blanco 2 oz"], ["Real Black Cherry Syrup 1 oz"], ["Rocco's Lime Mix 2 oz"], ["Dehydrated Lime Wheel"],"./images/blackDiamond.png", null);
@@ -41,7 +41,7 @@ class Drink{
    //let  = new Drink("",null,null,null,null,null,null,"./images/.png", null);
    
    // Frozen Margaritas
-   let houseMargaritaFrozen = new Drink("House Margarita (Frozen)", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz", "( Flavored Margarita: Rocco's Lime Mix 3 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 2 oz )"], ["Lime Wedge"],"./images/houseMargaritaFrozen.png", null);
+   let houseMargaritaFrozen = new Drink("House Margarita (Frozen)", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz", "Flavored Margarita: Rocco's Lime Mix 3 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 2 oz"], ["Lime Wedge"],"./images/houseMargaritaFrozen.png", null);
    let roccoRitaFrozen = new Drink("Rocco Rita (Frozen)","Margarita Glass", "Guest Choice", ["Teremana Blanco 2 oz"], ["J. F. Haydens Orange Liqueur 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Lime Wedge"],"./images/roccoRitaFrozen.png", null);
    let cadillacFrozen = new Drink("Cadillac (Frozen)", "Margarita Glass", "Guest Choice", ["1800 Anejo 2 oz"], ["Grand Marnier 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Lime Wedge"],"./images/cadillacFrozen.png", null);
    let jalapenoFrozen = new Drink("Jalapeno (Frozen)", "Margarita Glass", "Guest Choice", ["Tanteo Jalapeno 2 oz", "( sub Habanero or Chipotle )"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Jalapeno Slice,", "Lime Wedge"],"./images/jalapenoFrozen.png", null);
