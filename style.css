@@ -133,10 +133,13 @@ body {
     .happyhour-buttons,
     .monthly-specials-buttons,
     .other-buttons,
+    .tacotuesday-buttons,
+    .brunch-buttons,
     .batch-buttons, 
     .form-container, 
     .results-container, 
-    #rotateScreenIcon{
+    #rotateScreenIcon,
+    #tacoTuesday{
         display: none;
     }  
 

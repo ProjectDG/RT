@@ -79,9 +79,15 @@ class Drink{
    let redSangria = new Drink("Red Sangria", "Wine Glass",null, ["Lindeman's Merlot 2 oz"], ["E & J Brandy / Blackberry Brandy Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/redSangria.png",null);
    let roseSangria = new Drink("Rose Sangria", "Wine Glass",null, ["Hampton Water Rose 2 oz"], ["E & J Brandy / Peach Schnapps Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/roseSangria.png",null);
 
+   // Taco Tuesday
+   let mimosa = new Drink("Mimosa", "Champaign Flute",null,["Sparkling Wine 3 oz"],null, ["Orange Juice 2 oz"],null,"./images/brunch.png", null);
+   let bloodyMary = new Drink("Bloody Mary", "Mojito Glass", "Rocco's Spice Rim",["Finlandia Vodka 2 oz"],null, ["Zing Zang 4 oz"], ["Lemon Wedge,", "Olives ( 3 Skewered )"],"./images/brunch.png", null);
+   let rose = new Drink("Rosé", "Wine Glass",null, ["House Rosé 6 oz"],null,null,null,"./images/brunch.png", null);
 
    // Batch Recipes
    let roccoMangoBatch = new Drink("Rocco Mango (Batch)",null,null, ["Jose Cuervo Tradicional Silver 750ml,", "Rock & Roll Mango Tequila 750ml"], ["J. F. Hayden Mango Liqueur 750ml"],null,null,"./images/logo.png", "Batch");
+   let houseLiterBatch = new Drink("House Liter (Batch)",null,null, ["Jose Cuervo Tradicional Silver 6 oz"], ["Triple Sec 3 oz"], ["Sour Mix 12 oz,", "Water 10 oz"],null,"./images/houseLiter.png", "Batch");
+   let houseLiterFlavorBatch = new Drink("House Liter Flavor (Batch)",null,null, ["Jose Cuervo Tradicional Silver 6 oz"], ["Triple Sec 3 oz"], ["Puree Flavor 3 oz", "Sour Mix 9 oz,", "Water 10 oz"],null,"./images/houseLiterFlavor.png", "Batch");
    //let  = new Drink(null,null,null, null,null,null,null,"./images/logo.png", "Batch");
 
    // Searchable Drinks
@@ -135,8 +141,15 @@ class Drink{
        redSangria,
        roseSangria,
 
+       // Brunch
+       mimosa,
+       bloodyMary,
+       rose,
+
        // Batch recipes **********************
        roccoMangoBatch,
+       houseLiterBatch,
+       houseLiterFlavorBatch,
 
 
        // Searchable Drinks ******************
@@ -452,6 +465,10 @@ $(document).ready(function(){
                     if(x["glass"] === "Wine Glass"){
                         $("#liquor").text("Wine :").css("text-decoration", "underline");
                     }
+
+                    if(x["glass"] === "Champaign Flute"){
+                        $("#liquor").text("Champaign :").css("text-decoration", "underline");
+                    }
                   
 
                 
@@ -494,6 +511,7 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".results-list").hide();
         $("#navDessert").hide();
+        $("#tacoTuesday").hide();
         $(".margarita-buttons").show()//.fadeIn(200);
         $(".button-container").show();
         openFullscreen();
@@ -515,6 +533,7 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".results-list").hide();
         $("#navDessert").hide();
+        $("#tacoTuesday").hide();
         $(".frozen-buttons").show()//.fadeIn(200);
         $(".button-container").show();
         openFullscreen();
@@ -536,6 +555,7 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".results-list").hide();
         $("#navDessert").hide();
+        $("#tacoTuesday").hide();
         $(".specialty-buttons").show()//.fadeIn(200);
         $(".button-container").show();
         openFullscreen();
@@ -557,6 +577,7 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".results-list").hide();
         $("#navDessert").hide();
+        $("#tacoTuesday").hide();
         $(".mocktail-buttons").show()//.fadeIn(200);
         $(".button-container").show();
         openFullscreen();
@@ -577,6 +598,7 @@ $(document).ready(function(){
         $(".all-buttons").hide();        
         $(".form-container").hide();
         $(".results-list").hide();
+        $("#tacoTuesday").hide();
         $(".happyhour-buttons").show()//.fadeIn(200);
         $(".button-container").show();
         openFullscreen();
@@ -596,10 +618,53 @@ $(document).ready(function(){
         $("#garnishRecipe4").hide();
         $(".all-buttons").hide();
         $(".results-list").hide();
+        $("#tacoTuesday").hide();
         $(".other-buttons").show()//.fadeIn(200);
         $(".form-container").show();
         $(".button-container").show();
         searchInput.value = '';
+        openFullscreen();
+    });
+
+    $("#navTacoTuesday").click(function(){
+        $(".item3").hide();
+        $(".item4").hide();
+        $(".drink-title").hide();
+        $("#liquorRecipe2").hide();
+        $("#mixersRecipe2").hide();
+        $("#mixersRecipe3").hide();
+        $("#mixersRecipe4").hide();
+        $("#mixersRecipe5").hide();
+        $("#garnishRecipe2").hide();
+        $("#garnishRecipe3").hide();
+        $("#garnishRecipe4").hide();
+        $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".tacotuesday-buttons").show()//.fadeIn(200);
+        $("#tacoTuesday").show();
+        $(".results-list").hide();
+        $(".button-container").show();
+        openFullscreen();
+    });
+
+    $("#navBrunch").click(function(){
+        $(".item3").hide();
+        $(".item4").hide();
+        $(".drink-title").hide();
+        $("#liquorRecipe2").hide();
+        $("#mixersRecipe2").hide();
+        $("#mixersRecipe3").hide();
+        $("#mixersRecipe4").hide();
+        $("#mixersRecipe5").hide();
+        $("#garnishRecipe2").hide();
+        $("#garnishRecipe3").hide();
+        $("#garnishRecipe4").hide();
+        $(".all-buttons").hide();
+        $(".form-container").hide();
+        $(".brunch-buttons").show()//.fadeIn(200);
+        $(".results-list").hide();
+        $("#tacoTuesday").hide();
+        $(".button-container").show();
         openFullscreen();
     });
 
@@ -619,6 +684,7 @@ $(document).ready(function(){
         $(".form-container").hide();
         $(".batch-buttons").show()//.fadeIn(200);
         $(".results-list").hide();
+        $("#tacoTuesday").hide();
         $(".button-container").show();
         openFullscreen();
     });
