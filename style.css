@@ -39,7 +39,7 @@ body {
         justify-content: center;
         margin: 5% 5%;
         height: auto;
-        font-size: 3.75vh;
+        font-size: 3.7vh;
         font-family: monospace;
         -webkit-text-stroke: 2px black;
     }
@@ -252,7 +252,7 @@ body {
 
     .recipe-container{
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto; /*dont need the extra columns fix later*/
+        grid-template-columns: auto; /*dont need the extra columns fix later*/
         grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
         column-gap: 2vw;
         height: 100%;

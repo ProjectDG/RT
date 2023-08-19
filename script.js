@@ -27,12 +27,12 @@ class Drink{
    };
    
    // Margaritas................................................................................................
-   let houseMargarita = new Drink("House Margarita", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz", "Flavored Margarita: Sour Mix 2 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz"], ["Lime Wedge"],"./images/houseMargarita.png", null);
+   let houseMargarita = new Drink("House Margarita", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz", "-------------------------","Flavored Margarita: Sour Mix 2 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz"], ["Lime Wedge"],"./images/houseMargarita.png", null);
    let roccoRita = new Drink("Rocco Rita","Margarita Glass", "Guest Choice", ["Teremana Blanco 2 oz"], ["J. F. Haydens Orange Liqueur 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/roccoRita.png", null);
    let cadillac = new Drink("Cadillac", "Margarita Glass", "Guest Choice", ["1800 Anejo 2 oz"], ["Grand Marnier 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/cadillac.png", null);
    let blackDiamond = new Drink("Black Diamond", "Rocks Glass", "Black Sea Salt", ["Santo Blanco 2 oz"], ["Real Black Cherry Syrup 1 oz"], ["Rocco's Lime Mix 2 oz"], ["Dehydrated Lime Wheel"],"./images/blackDiamond.png", null);
    let strawberryBasil = new Drink("Strawberry Basil", "Margarita Glass", "Guest Choice", ["Flecha Azul Blanco 2 oz"], ["Triple Sec 1 oz"], ["Agave .5 oz,", "Basil & Strawberry ( Muddled )", "Rocco's Lime Mix 3 oz"], ["Basil ( 2 Leaves )", "Strawberry"],"./images/strawberryBasil.png", null);
-   let jalapeno = new Drink("Jalapeno", "Margarita Glass", "Guest Choice", ["Tanteo Jalapeno 2 oz", "( sub Habanero or Chipotle )"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz"], ["Jalapeno Slice,", "Lime Wedge"],"./images/jalapeno.png", null);
+   let spicyJalapeno = new Drink("Spicy Jalapeno", "Margarita Glass", "Guest Choice", ["Tanteo Jalapeno 2 oz", "( sub Habanero or Chipotle )"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Jalapeno Slice,", "Lime Wedge"],"./images/jalapeno.png", null);
    let twoTango = new Drink("Two Tango", "Old Fashioned Rocks Glass", "Jalapeno Salt", ["El Jimador Blanco 1 oz,", "Dos Hombres Mezcal 1 oz"],null, ["Jalapeno ( 1 Slice Muddled ),", "Rocco's Lime Mix 3 oz"], ["Dehydrated Chile De Arbol,", "Dehydrated Lime Wheel"],"./images/twoTango.png", null);
    let skinnySenorita = new Drink("Skinny Senorita", "Coupe Glass (No Ice)",null, ["Herradura Silver 2 oz"],null,["Rocco's Lime Mix 2 oz"], ["Dehydrated Edible Flowers,", "Dehydrated Lime Wheel"],"./images/skinnySenorita.png", null);
    let roccoMango = new Drink("Rocco Mango", "Highball", "Hibiscus Salt",null,null,["Batch Mix 3 oz,", "Rocco's Lime Mix 2 oz"], ["Dehydrated Lime Wheel"],"./images/roccoMango.png", null);
@@ -41,7 +41,7 @@ class Drink{
    //let  = new Drink("",null,null,null,null,null,null,"./images/.png", null);
    
    // Frozen Margaritas
-   let houseMargaritaFrozen = new Drink("House Margarita (Frozen)", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz", "Flavored Margarita: Rocco's Lime Mix 3 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 2 oz"], ["Lime Wedge"],"./images/houseMargaritaFrozen.png", null);
+   let houseMargaritaFrozen = new Drink("House Margarita (Frozen)", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz", "------------------------------", "Flavored Margarita: Rocco's Lime Mix 2 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz"], ["Lime Wedge"],"./images/houseMargaritaFrozen.png", null);
    let roccoRitaFrozen = new Drink("Rocco Rita (Frozen)","Margarita Glass", "Guest Choice", ["Teremana Blanco 2 oz"], ["J. F. Haydens Orange Liqueur 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Lime Wedge"],"./images/roccoRitaFrozen.png", null);
    let cadillacFrozen = new Drink("Cadillac (Frozen)", "Margarita Glass", "Guest Choice", ["1800 Anejo 2 oz"], ["Grand Marnier 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Lime Wedge"],"./images/cadillacFrozen.png", null);
    let jalapenoFrozen = new Drink("Jalapeno (Frozen)", "Margarita Glass", "Guest Choice", ["Tanteo Jalapeno 2 oz", "( sub Habanero or Chipotle )"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Jalapeno Slice,", "Lime Wedge"],"./images/jalapenoFrozen.png", null);
@@ -58,7 +58,7 @@ class Drink{
    let mexitini = new Drink("Mexitini", "Martini Glass",null,["Cazadores Reposado 1.5 oz"], ["J. F. Haydens Coffe Liqueuer 1.5 oz"], ["Agave .25 oz"], ["3 Coffee Beans"],"./images/mexitini.png", null);
    let oldFashioned = new Drink("Old Fashioned", "Old Fashioned Rocks Glass", "Bittersweet Chocolate Pinned", ["Hornitos Anejo 2 oz"],null, ["Agave .5 oz,", "Chocolate Bitters ( 4 Dashes ),", "Fee Brothers Orange Bitters ( 4 Dashes )"], ["Orange Peel"],"./images/oldFashioned.png", null);
    let casamigosLemonade = new Drink("Casamigos Lemonade", "Rocco's Logo Pint",null, ["Casamigos Silver 2 oz"],null, ["Agave 1 oz,", "Club Soda ( Topped ),", "Lemons ( 6 Muddled )"],null,"./images/casamigosLemonade.png", null);
-   let theMules = new Drink("The Mules", "Copper Mug",null, ["Mexican: 1800 Anejo 2 oz", "Smokey: Dos Hombres Mezcal 2 oz / Moscow: Titos 2 oz"],null, ["Ginger Beer ( Topped ),", "Lime Juice 1 oz"], [" Dehydrated Lime Wheel"],"./images/theMules.png", null);
+   let theMules = new Drink("The Mules", "Copper Mug",null, ["Mexican: 1800 Anejo 2 oz", "Smokey: Dos Hombres Mezcal 2 oz | Moscow: Titos 2 oz"],null, ["Ginger Beer ( Topped ),", "Lime Juice 1 oz"], [" Dehydrated Lime Wheel"],"./images/theMules.png", null);
    //let  = new Drink("",null,null,null,null,null,null,"./images/.png", null);
 
    // Mocktails
@@ -109,7 +109,7 @@ class Drink{
        cadillacFrozen,
        blackDiamond,
        strawberryBasil,
-       jalapeno,
+       spicyJalapeno,
        jalapenoFrozen,
        twoTango,
        skinnySenorita,
