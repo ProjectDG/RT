@@ -135,7 +135,8 @@ body {
     .monthly-specials-buttons,
     .other-buttons,
     .brunch-buttons,
-    .batch-buttons, 
+    .batch-buttons,
+    .sangria-buttons, 
     .form-container, 
     .results-container,
     .tacotuesday-buttons, 
@@ -195,6 +196,11 @@ body {
         overflow: scroll;
         grid-column: 1 / span 2;
         grid-row: 2;
+    }
+    .results-list{
+        position: fixed;
+        top: 26%;
+        height: 50vh;;
     }
 
     .mocktail-buttons{
@@ -416,12 +422,13 @@ body {
         grid-column: 1 / span 2;
         grid-row: 4;
         background-color: rgba(0, 0, 0, 0);
+        width: 100%;
     }
 
-    #navBatch, #navBrunch, #navTacoTuesday{
-        margin-top: .25vh;
+    #navBatch, #navBrunch, #navTacoTuesday, #navSangria{
+        margin: .25vh 0;
         height: 10vh;
-        width: 25vw;
+        width: 21vw;
         font-size: 3vh;
         border-radius:  0;
     }
