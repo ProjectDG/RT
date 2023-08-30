@@ -84,7 +84,7 @@ class Drink{
    let roseSangria = new Drink("Rose Sangria", "Wine Glass",null, ["Hampton Water Rose 2 oz"], ["E & J Brandy / Peach Schnapps Batch 1 oz", "sub: Grand Marnier"], ["Ginger Ale ( Topped ),", "Lime, Lemon & Orange Wedge ( 1 ea. Muddled ),", "Orange Juice .25 oz,", "Simple Syrup .25 oz"], ["Fruits"],"./images/roseSangria.png",null);
    //let  = new Drink("",null,null,null,null,null,null,"./images/.png", null);
 
-   // Taco Tuesday
+   // Taco Tuesdaylong
    let navTacoTuesday = new Drink("$7 House | $5 Mexican Drafts", "Margarita Glass or Pint Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 1.5 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/tacoTuesday.png", null);
    //let  = new Drink("",null,null,null,null,null,null,"./images/.png", null);
 
@@ -103,11 +103,13 @@ class Drink{
 
 
    // Searchable Drinks
+   let aperolSpritz = new Drink("Aperol Spritz", "Wine Glass",null, ["Dry Prosecco 3 oz"], ["Aperol 2 oz"], ["Club Soda 1 oz ( Splash )"], ["Orange Slice"],"./images/aperolSpritz.png", null);
    let appleMartini = new Drink("Apple Martini", "Martini Glass",null,["Vodka 1.5 oz"], ["Sour Apple Pucker .5 oz"], ["Lemon Juice 1 oz,","Simple Syrup ( or Agave ) .5 oz"], ["Apple Slice & Cherry"],"./images/appletini.png", null);
    let chocolateMartini = new Drink("Chocolate Martini", "Martini Glass",null, ["Vodka ( or Vanilla Vodka ) 2 oz"], ["Crème de Cacao ( White ) .5 oz,", "Godiva Chocolate Liqueur or Crème de Cacao ( Dark ) .5 oz"], ["Milk ( For Volume If Wanted ) 1 oz"], ["Chocolate Shavings ( On Rim or Top ),", "Chocolate Syrup ( In Glass Before Pour )"],"./images/chocolateMartini.png", null);
    let espressoMartini = new Drink("Espresso Martini", "Martini Glass",null,["Vodka ( or Vanilla Vodka ) 2 oz"], ["Crème de Cacao .5 oz,", "Kahlua .5 oz"], ["Espresso ( or Coffee ) .5"], ["Espresso Beans 3"],"./images/espressoMartini.png", null);
    let greenTea = new Drink("Green Tea", "Rocks Glass",null, ["Irish Whiskey .5 oz"], ["Peach Schnapps .5 oz"], ["Sour Mix .5 oz,", "Sprite ( Splash )"],null,"./images/greenTea.png", null);
    let hurricane = new Drink("Hurricane", "Hurricane Glass",null, ["Dark Rum 1 oz,", "Light Rum 1 oz"],null, ["Grenadine 1 Teaspoon,", "Lime Juice .5 oz,", "Orange Juice .5 oz,", "Passion Fruit Puree .5 oz,", "Simple Syrup .5 oz"], ["Cherry & Orange Slice"],"./images/hurricane.png", null);
+   let longIslandIcedTea = new Drink("Long Island Iced Tea", "Pint Glass",null, ["Gin .5 oz,", "Rum .5 oz,", "Tequila .5 oz,", "Vodka .5 oz"], ["Triple Sec .5 oz"], ["Coke 1 oz,", "Sweet & Sour Mix 1 oz"], ["Lemon Wheel"], "./images/longIslandIcedTea.png", null);
    let maiTai = new Drink("Mai Tai", "Hurricane Glass",null, ["Dark Rum ( Float ) .5 oz,", "Rum 1.5 oz,"], ["Orange Curaçao .75 oz"], ["Lime Juice .75 oz,", "Orgeat .5 oz"], ["Lime & Mint Sprig"],"./images/maiTai.png", null);
    let negroni = new Drink("Negroni", "Rocks Glass",null, ["Gin 1 oz"], ["Campari 1 oz"], ["Sweet Vermouth 1 oz"], ["Orange Slices"],"./images/negroni.png", null);
    let sexOnTheBeach = new Drink("Sex On The Beach", "Hurricane Glass",null, ["Vodka 1.5 oz"], ["Peach Schnapps .5 oz"], ["Cranberry Juice 2 oz,", "Orange Juice 2 oz"], ["Cherry & Orange Slice"],"./images/sexOnTheBeach.png", null);
@@ -178,11 +180,13 @@ class Drink{
 
 
        // Searchable Drinks ******************
+       aperolSpritz,
        appleMartini,
        chocolateMartini,
        espressoMartini,
        greenTea,
        hurricane,
+       longIslandIcedTea,
        maiTai,
        negroni,
        sexOnTheBeach,
@@ -277,6 +281,7 @@ class Drink{
 $(document).ready(function(){
 
     $('body').on('click','.all-buttons', '.result-item', function(){
+        $("#drinkPhoto").hide();
         $(".item4").remove('.recipe-container');
         $(".all-buttons").hide();
         $(".form-container").hide();
@@ -287,6 +292,7 @@ $(document).ready(function(){
         $(".initialRecipe").show();
         $("#liqueurRecipe2").hide();
         $(".recipe-container").remove('#liquor');
+        $("#drinkPhoto").show();
         openFullscreen();
 
 
