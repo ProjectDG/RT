@@ -26,6 +26,21 @@ body {
         color: rgb(241, 237, 231);
     }
 
+    #menuTestButton{
+        z-index: 10;
+        border: 2px solid red;
+        display: initial;
+        position: relative;
+        border: 4px outset rgb(122, 113, 113);
+        margin: 20% 35% 0 35%;
+        width: 30vw;
+        height: 12vh;
+        font-size: 2.75vh;
+        background-color: black;
+        color: white;
+        padding: 0 5vw;
+    }  
+
     button, img, p, .grid-item{
         display: none;
     }
@@ -140,7 +155,8 @@ body {
     .form-container, 
     .results-container,
     .tacotuesday-buttons, 
-    #rotateScreenIcon{
+    #rotateScreenIcon,
+    #menuTestButton{
         display: none;
     }  
 
