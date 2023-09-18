@@ -32,13 +32,13 @@ body {
         display: initial;
         position: relative;
         border: 4px outset rgb(122, 113, 113);
-        margin: 20% 35% 0 35%;
-        width: 30vw;
-        height: 12vh;
+        margin: 20% 0 0 31vw;
+        width: 38vw;
+        height: 15vh;
         font-size: 2.75vh;
         background-color: black;
         color: white;
-        padding: 0 5vw;
+        padding: 0 3vw;
     }  
 
     button, img, p, .grid-item{
