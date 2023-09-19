@@ -26,6 +26,24 @@ class Drink{
     };
    };
    
+
+    /*  -----------------------Drink Template-----------------------
+   let  = new Drink(
+       "",
+       "",
+       "",
+       [""],
+       [""],
+       [""],
+       [""],
+       "./images/.png", 
+       null);
+   */
+
+
+
+
+
    // Margaritas................................................................................................
    let houseMargarita = new Drink("House Margarita", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Sour Mix 3 oz", "-------------------------","Flavored Margarita: Sour Mix 2 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz"], ["Lime Wedge"],"./images/houseMargarita.png", null);
    let roccoRita = new Drink("Rocco Rita","Margarita Glass", "Guest Choice", ["Teremana Blanco 2 oz"], ["J. F. Haydens Orange Liqueur 1 oz"], ["Sour Mix 3 oz"], ["Lime Wedge"],"./images/roccoRita.png", null);
@@ -38,12 +56,31 @@ class Drink{
    let roccoMango = new Drink("Rocco Mango", "Highball", "Hibiscus Salt",null,null,["Batch Mix 3 oz,", "Rocco's Lime Mix 2 oz"], ["Dehydrated Lime Wheel"],"./images/roccoMango.png", null);
    let watermelonKiss = new Drink("Watermelon Kiss", "Margarita Glass",null, ["El Jimador Blanco 2 oz"], ["Triple Sec 1 oz"], ["Finest Call Watermelon 1 oz,", "Rocco's Lime Mix 2 oz"], ["Watermelon Slice"],"./images/watermelonKiss.png", null);
    let spicyMango = new Drink("Spicy Mango", "Highball Glass", "Tajin Chile Lime Salt", ["Ghost Tequila 2 oz"],null, ["Real Mango Puree 1 oz,", "Sour Mix 1 oz"], ["Dehydrated Chile De Arbol,", "Dehydrated Lime Wheel"],"./images/spicyMango.png", null);
-   //let  = new Drink("",null,null,null,null,null,null,"./images/.png", null);
-   
+
 
    // Frozen Margaritas
-   let houseMargaritaFrozen = new Drink("House Margarita (Frozen)", "Margarita Glass", "Guest Choice", ["Jose Cuervo Tradicional Silver 2 oz"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz", "------------------------------", "Flavored Margarita: Rocco's Lime Mix 2 oz,", "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz"], ["Lime Wedge"],"./images/houseMargaritaFrozen.png", null);
-   let roccoRitaFrozen = new Drink("Rocco Rita (Frozen)","Margarita Glass", "Guest Choice", ["Teremana Blanco 2 oz"], ["J. F. Haydens Orange Liqueur 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Lime Wedge"],"./images/roccoRitaFrozen.png", null);
+   let houseMargaritaFrozen = new Drink(
+       /* Name */ "House Margarita (Frozen)", 
+       /* Glass */ "Margarita Glass", 
+       /* Rim */ "Guest Choice", 
+       /* Liquor */ ["Jose Cuervo Tradicional Silver 2 oz"], 
+       /* Liqueuer */ ["Triple Sec 1 oz"], 
+       /* Mixers */ ["Rocco's Lime Mix 3 oz", "------------------------------", 
+                     "Flavored Margarita: Rocco's Lime Mix 2 oz,", 
+                     "Strawberry, Mango, Prickly Pear, Passion Fruit or Pomegranate 1 oz"], 
+       /* Garnish */ ["Lime Wedge"],
+       /* Image */ "./images/houseMargaritaFrozen.png", 
+       /* Batch */ null);
+   let roccoRitaFrozen = new Drink(
+       /* Name */ "Rocco Rita (Frozen)",
+       /* Glass */ "Margarita Glass", 
+       /* Rim */ "Guest Choice", 
+       /* Liquor */ ["Teremana Blanco 2 oz"], 
+       /* Liqueuer */ ["J. F. Haydens Orange Liqueur 1 oz"], 
+       /* Mixers */ ["Rocco's Lime Mix 3 oz"], 
+       /* Garnish */["Lime Wedge"],
+       /* Image */ "./images/roccoRitaFrozen.png", 
+       /* Batch */null);
    let cadillacFrozen = new Drink("Cadillac (Frozen)", "Margarita Glass", "Guest Choice", ["1800 Anejo 2 oz"], ["Grand Marnier 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Lime Wedge"],"./images/cadillacFrozen.png", null);
    let jalapenoFrozen = new Drink("Jalapeno (Frozen)", "Margarita Glass", "Guest Choice", ["Tanteo Jalapeno 2 oz", "( sub Habanero or Chipotle )"], ["Triple Sec 1 oz"], ["Rocco's Lime Mix 3 oz"], ["Jalapeno Slice,", "Lime Wedge"],"./images/jalapenoFrozen.png", null);
    let watermelonKissFrozen = new Drink("Watermelon Kiss (Frozen)", "Margarita Glass",null, ["El Jimador Blanco 2 oz"], ["Triple Sec 1 oz"], ["Finest Call Watermelon 1 oz,", "Rocco's Lime Mix 2 oz"], ["Watermelon Slice"],"./images/watermelonKissFrozen.png", null);
