@@ -152,8 +152,8 @@ body {
     .form-container, 
     .results-container,
     .tacotuesday-buttons, 
-    #rotateScreenIcon
-    .portraitButtons{
+    #rotateScreenIcon,
+    #portraitContainer{
         display: none;
     }  
 
