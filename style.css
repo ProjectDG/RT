@@ -26,24 +26,45 @@ body {
         color: rgb(241, 237, 231);
     }
 
+    #portraitButtonDiv{
+        border: 4px outset rgb(122, 113, 113);
+        margin: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .portraitButtons{
         border: 4px outset rgb(122, 113, 113);
-        width: 50vw;
-        height: auto;
+        width: 35vw;
+        height: 15vh;
         font-size: 2.75vh;
         background-color: black;
         color: white;
-        padding: 2vh 3vw;
-        display: block;
-        margin:  2vh auto;
+        padding: 4vh 4vw;
+        display: flex;
+        margin: 4vw auto;
+        justify-content: center;
     }  
+
+    .portraitButtonText{
+        width: auto;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #portraitInventoryButton{
+        padding-top: 10%;
+    }
 
     button, img, p, .grid-item{
         display: none;
     }
 
     #portraitContainer{
-        margin: 10% 0;
+        border: 4px outset rgb(122, 113, 113);
+        margin: 10% ;
+        text-align: center;
     }
 
     h1{
@@ -95,7 +116,7 @@ body {
     .grid-item {
         background-color: rgba(0, 0, 0, 0.8);
         text-align: center;
-        padding: 20px 20px 5px 20px;
+        padding: 10px 20px 5px 20px;
         font-size: 30px;
         color: white;
     }
@@ -153,7 +174,8 @@ body {
     .results-container,
     .tacotuesday-buttons, 
     #rotateScreenIcon,
-    #portraitContainer{
+    #portraitContainer,
+    #portraitButtonDiv{
         display: none;
     }  
 
