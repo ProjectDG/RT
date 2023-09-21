@@ -172,7 +172,7 @@ body {
     .sangria-buttons, 
     .form-container, 
     .results-container,
-    .tacotuesday-buttons, 
+    .specials-buttons, 
     #rotateScreenIcon,
     #portraitContainer,
     #portraitButtonDiv{
@@ -460,7 +460,7 @@ body {
         width: 100%;
     }
 
-    #navBatch, #navBrunch, #navTacoTuesday, #navSangria{
+    #navBatch, #navBrunch, #navSpecials, #navSangria{
         margin: .25vh 0;
         height: 10vh;
         width: 21vw;
